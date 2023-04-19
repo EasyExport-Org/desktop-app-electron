@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Easy Export</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+    <body>
+  
+
+         <div class="sidebar">
+           <div class="logo">
+            <img src="assets/img/logo.svg">
+           </div> 
+
+           
+          
+
+<a href="index.html">
+           <div class="icons margin-ten active">
+            <img src="assets/img/dashboards.png">
+            <p>Dashboard</p>
+         </div></a>
+
+
+<a href="bills.html">
+         <div class="icons">
+            <img src="assets/img/invoice.png">
+            <p>Generate Bill</p>
+         </div>
+  </a>
+
+  <a href="templates.html">
+         <div class="icons">
+            <img src="assets/img/explore.png">
+            <p>Explore Templates</p>
+         </div></a>
+
+
+    
+      
+
+
+         <a href="settings.html">
+         <div class="icons line">
+            <img src="assets/img/user.png">
+            <p>Settings</p>
+         </div>
+</a>
+         <div class="icons logout">
+            <img src="assets/img/exit.png">
+            <p>Logout</p>
+         </div>
+
+
+
+       </div>
+
+
+
+
+       <div class="rightbar">
+        <div class="left">
+         <h3>List of Invoices</h3>
+         <a href="settings.html">
+            <div class="username">
+                <img src="assets/img/user.png">
+
+                <p>Aman Sharma</p>
+            </div></a>
+            <p id="status"></p>
+           
+        </div>
+
+
+        <div class="rightbar-top">
+      
+        </div>
+
+        <!-- <div class="div-section">
+         <div class="divs dark">
+            <img src="assets/img/rupee.png">
+            <h1>00+</h1>
+            <p>Total Earning</p>
+         </div>  
+         
+         <div class="divs">
+            <img src="assets/img/invoice (1).png">
+            <h1>00+</h1>
+            <p>Generated bills</p>
+         </div>   -->
+
+
+         <div class="table">
+           
+            <table>
+               <thead id="fd">
+                  <th>
+                      <td id="create">Create New</td>
+                      <td>Performa/Saved Invoices</td>
+                      <td>Export Invoices</td>
+                      <td>Tax Invoices</td>
+                      <td>Cash Invoices</td>
+                      <td>All Invoices</td>
+                  </th>
+              </thead>
+                <thead>
+                    <th>
+                        <td>Date</td>
+                        <td>Buyer Name</td>
+                        <td>Amount</td>
+                        <td>Invoice Number</td>
+                        <td>Invoice Type</td>
+                        <td>Action Status</td>
+                    </th>
+                </thead>
+                <tbody>
+                    <th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </th>
+                </tbody>
+            </table>
+         </div>
+
+
+        </div>
+
+
+        
+
+     </div>
+
+
+
+     <script src="renderer.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,565 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family:'eb-bold';
+    src: url(../font/Gilroy-Bold.woff);
+    }
+    
+    
+    @font-face {
+    font-family:eb-extrabold;
+    src: url(../font/Gilroy-ExtraBold.woff);
+    }
+    
+    
+    @font-face {
+    font-family:eb-light;
+    src: url(../font/Gilroy-Light.woff);
+    }
+    
+    
+    @font-face {
+    font-family:eb-medium;
+    src: url(../font/Gilroy-Medium.woff);
+    }
+    
+    
+    @font-face {
+    font-family:eb-regular;
+    src: url(../font/Gilroy-Regular.woff);
+    }
+    
+    
+    @font-face {
+    font-family:eb-semibold;
+    src: url(../font/Gilroy-SemiBold.woff);
+    }
+    
+
+
+
+body{
+    padding:0;
+    margin: 0;
+    background-color:#f1f1f1;
+    font-family: 'eb-medium';
+     overflow-x: hidden;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+   
+}
+
+.sidebar{
+    padding: 20px;
+    width:15%;
+    position:fixed;
+    height: 100%;
+    float:left;
+    overflow: hidden;
+    box-shadow: 0 12px 34px 0 rgb(57 67 87 / 10%);
+ z-index: 99999;
+background: linear-gradient(180deg, #0238C8 0%, #0139C4 100%);
+}
+
+.logo{
+    float:left;
+    color:white;
+}
+.logo h1{
+    font-family: eb-extrabold;
+    margin-top: 50px;
+}
+.icons{
+    float:left;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+   
+    opacity: 0.7;
+    
+}
+.icons img{
+    float:left;
+    width:20px
+}
+.icons p{
+    float: left;
+    margin-top: -10px;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+   
+}
+.margin-ten{
+    margin-top: 100px;
+}
+
+.active{
+ opacity: 1;   
+}
+
+.line{
+   margin-top: 100px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+
+    opacity: 1;
+    padding: 10px;
+    width: 50%;
+    height: 20px;
+    
+}
+
+.logout p{
+    color: red;
+}
+
+.rightbar{
+    float: right;
+    width: 85%;
+   margin-left: 15%;
+   padding: 40px;
+   position: absolute;
+    height: 100%;
+    z-index: 9;
+    background-color:white;
+  
+}
+
+.rightbar-top{
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    padding: 20px;
+
+}
+.rightbar-top img{
+    float: left;
+    width: 30px;
+}
+.rightbar-top h1{
+    margin-top: -5px;
+    margin-left: 20px;
+    float: left;
+}
+.rightbar-top h3{
+    text-align:left;
+}
+.div-section{
+    width: 100%;
+    float: left;
+}
+
+.divs{
+    width: 200px;
+    height: 70px;
+    padding: 40px;
+    border-radius: 16px;
+    float: left; box-shadow: 0 12px 34px 0 rgb(57 67 87 / 10%);
+    margin: 20px;
+}
+.dark{
+    background-color:#276DEC;
+    color: white;
+}
+.divs img{
+    float: left;
+    width: 30px;
+}
+
+.divs h1{
+    float: left;
+    margin-top: -5px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.divs p{
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+    
+}
+
+.table{
+    width: 100%;
+    float: left;
+    padding: 20px;
+
+}
+.table table{
+    margin-left: -5px;
+}
+.table table thead td{
+    text-align:left;
+    font-family: eb-extrabold;
+    padding: 20px;
+    background-color: #f1f1f1;}
+
+.table table tbody td{
+    width: 140px;
+    text-align:left;
+    padding: 20px;
+    border: solid #D1E1FC 1px;
+    cursor: pointer;
+}
+.left{
+    width:85%;
+    float:left;
+    position:fixed;
+    top: 0;
+    margin-top: 0px;
+    margin-left: -40px;
+    padding: 20px;
+    z-index: 9999999;
+    background-color: white;
+    border-bottom: solid #f1f1f1 1px;
+}
+.left h3{
+    float: left;
+    margin-left: 40px;
+    font-size: 24px;
+}
+.left p{
+    margin-right: 50px;
+    padding: 5px;
+    background-color: #F1F7FE;
+    float: right;
+    width: 120px;
+    text-align: center;
+    color: #0139C4;
+    border-radius:10px ;
+}
+.username{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.username img{
+    width: 20px;
+}
+
+.username p{
+    background-color: transparent;
+    color: black;
+    margin-top: -5px;
+}
+
+
+
+.container {
+	margin-bottom: 5%;
+	background-color: #fff;
+/* 	For card dimensions of 85.5 x 55, ratio =  1.556 x 1  */
+	width: calc(1.565 * var(--size));
+	min-width: 300px;
+	height: calc(1 * var(--size));
+	min-height: 200px;
+	display: flex;
+	box-sizing: border-box;
+	border: 1px solid grey;
+}
+.front {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #071c33;
+	background-image: url('https://nigerialogos.com/logos/paystack/paystack.svg');
+	background-size: 10%;
+	background-position: 49% 30%;
+	background-repeat: no-repeat;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 200%;
+}
+.front p {
+	margin-top: 65px;
+}
+.back {
+	align-items: flex-end;
+	font-size: 70%;
+	padding: 10%;
+}
+.button {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(50,150,100);
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	margin-top: 2%;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+      visibility: visible;
+    }
+    #section-to-print {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .invoice{
+    margin-top: 4px;
+    float: left;
+    width: 100%;
+  }
+
+  .fifty label{
+    width:100%;
+    float: left;
+    margin-top: 15px;
+  }
+  .fifty input{
+    width: 80%;
+    float: left;
+    padding: 10px;
+    border: none;
+    margin-top: 4px;
+    font-family: eb-regular;
+   
+  }
+  .fifty{
+    width:50%;
+    float: left;
+  }
+
+  #address{
+    height: 100px;
+  }
+
+  #serial{
+    width: 100%;
+    float: left;
+  }
+  .serial{
+    width: 5%;
+    float: left;
+   
+  }
+  .serial input{
+    width: 40px;
+  }
+  .goods{
+    width:30%;
+    float: left;
+     margin-left: 27px;
+     margin-right: -30px;
+  }
+  .hsn{
+    width: 10%;
+    float: left;
+     margin-left: 10px;
+  }
+
+  #add{
+    width:100%;
+    cursor: pointer;
+    float: left;
+  }
+
+  .right-print{
+    float: right;
+    width: 20%;
+  }
+  .invoice-left{
+    width: 60%;
+    float: left;
+    float: left;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 0px;
+   
+  }
+  
+
+  .invoice-right{
+    width: 25%;
+    float: left;
+    float: left;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-left: 10px;
+    
+  }
+  
+.right{
+    width: 100%;
+    float: left;
+}
+  .right label{
+    width: 40%;
+  }
+  .right input{
+    width: 50%;
+  }
+
+
+  .subtotal{
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    height: 45px;
+    width: 90%;
+  }
+  .subtotal label{
+ font-family: eb-extrabold;
+  }
+
+  .nl{
+    margin-top: 20px;
+  }
+
+  .print-btn{
+    float: left;
+    width: 100%;
+    
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 200px;
+    margin-bottom: -20px;
+    margin-left: -60px;
+  }
+
+  .print-btn button{
+    background-color: #0238C8;
+    color: #fff;
+    font-family: eb-bold;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1);
+  }
+
+
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+
+  .com-details h1{
+  width: 100%;
+  float: left;
+  margin-left: 0px;
+  }
+  .input-details{
+    width: 40%;
+    float:left;
+    padding: 20px;
+    margin-left: 5px;
+    background-color: #f1f1f1;
+  }
+
+  .input-details label{
+    width:100%;
+    margin-top: 15px;
+    float:left;
+  }
+
+  .input-details input{
+     width: 95%;
+    float: left;
+    padding: 10px;
+    margin-top:5px ;
+    border: none;
+    margin-top: 4px;
+    font-family: eb-regular;
+  }
+
+  #sign{
+    margin-left: -10px;
+  }
+
+  #update{
+    margin-left: 25px;
+    float: left;
+  }
+
+
+  .version{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    font-size: 12px;
+    opacity: 0.4;
+    z-index: -99;
+  }
+
+  #type{
+    font-family: eb-bold;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding:10px ;
+  }
+
+  .logo img{
+    width: 100%;
+    margin-top:15px ;
+  }
+
+#fd{
+  margin-bottom: 40px;
+  
+}
+  #fd td{
+    background:yellow;
+    color:black;
+    cursor: pointer;;
+  }
+
+  td#create{
+    background-color: #0139C4;
+    color: white;
+  }
